@@ -29,12 +29,11 @@ print(twines * thrines)
 
 # PART 2
 
-sorted_a = sorted(a)
-len_id = len(sorted_a[0])
+len_id = len(a[0])
 mostest = None
 
 for x in range(len_id):
-	tester = [z[:x] + z[x+1:] for z in sorted_a]
+	tester = [z[:x] + z[x+1:] for z in a]
 	y = Counter(tester)
 	w = y.most_common(1)
 	if w[0][1] > 1:
