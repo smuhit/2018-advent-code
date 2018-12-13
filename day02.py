@@ -4,6 +4,8 @@ a = [
     # DAY 2 Puzzle input snipped
 ]
 
+# PART 1
+
 twines = 0
 thrines = 0
 
@@ -24,6 +26,8 @@ for x in a:
         thrines += 1
 
 print(twines * thrines)
+
+# PART 2
 
 sorted_a = sorted(a)
 len_id = len(sorted_a[0])
