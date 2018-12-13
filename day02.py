@@ -33,11 +33,11 @@ len_id = len(a[0])
 mostest = None
 
 for x in range(len_id):
-	tester = [z[:x] + z[x+1:] for z in a]
-	y = Counter(tester)
-	w = y.most_common(1)
-	if w[0][1] > 1:
-		mostest = w[0][0]
-		break
+    tester = [z[:x] + z[x+1:] for z in a]
+    y = Counter(tester)
+    w = y.most_common(1)
+    if w[0][1] > 1:
+        mostest = w[0][0]
+        break
 
 print(mostest)

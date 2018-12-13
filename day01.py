@@ -20,8 +20,8 @@ while not found:
     for x in a:
         freq += x
         if freq in seen:
-        	found = True
-        	break
+            found = True
+            break
         seen.add(freq)
 
 print(freq)
